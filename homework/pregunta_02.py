@@ -14,3 +14,12 @@ def pregunta_02():
     4
 
     """
+
+    import pandas as pd
+    df = pd.read_table('files/input/tbl0.tsv')
+
+    print(df.shape[1])
+    
+    return df.shape[1]
+
+print(pregunta_02())
